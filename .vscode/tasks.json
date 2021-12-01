@@ -1,0 +1,13 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+    {
+      "type": "npm",
+      "script": "test",
+      "group": "test",
+      "problemMatcher": [],
+      "label": "npm: test",
+      "detail": "cross-env DATABASE_URI=mongodb+srv://orzu:n01Zcbaj8uL0tIJ1@sandbox.1q6ww.mongodb.net/myFirstDatabase?retryWrites=true jest --collectCoverage --forceExit"
+    }
+  ]
+}

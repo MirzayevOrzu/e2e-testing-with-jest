@@ -5,15 +5,15 @@ const bcrypt = require('bcrypt');
 const Users = require('../models/users');
 const Recipes = require('../models/recipes');
 
-const password = bcrypt.hashSync('okay', 10);
+const hashPassword = (text) => bcrypt.hashSync(text, 10);
 const users = [
   {
     username: 'admin',
-    password,
+    password: hashPassword('bla'),
   },
   {
     username: 'Chinyelu',
-    password,
+    password: hashPassword('hfd'),
   },
 ];
 
